@@ -1,0 +1,555 @@
+{
+    "job": {
+        "id": "pjb-9euit3k2e01kijmj4limnjgnf4w1",
+        "project_id": "d4523271-f706-4be2-afa8-4d8a929d16f5",
+        "status": "COMPLETED",
+        "created_at": "2026-09-08 20:34:19.967363+00:00",
+        "error_message": null,
+        "name": "2206.01062v1-pages-4.pdf",
+        "tier": "agentic",
+        "updated_at": "2026-09-08 20:34:40.462320+00:00",
+        "usage": null,
+        "user_metadata": null
+    },
+    "forms": null,
+    "images_content_metadata": null,
+    "items": {
+        "pages": [
+            {
+                "items": [
+                    {
+                        "items": [
+                            {
+                                "md": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                                "value": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                                "bbox": [
+                                    {
+                                        "h": 8.18,
+                                        "w": 504.01,
+                                        "x": 53.8,
+                                        "y": 60.13,
+                                        "confidence": 0.91,
+                                        "end_index": 129,
+                                        "label": "header",
+                                        "r": null,
+                                        "start_index": 0
+                                    }
+                                ],
+                                "type": "text"
+                            }
+                        ],
+                        "md": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                        "bbox": [
+                            {
+                                "h": 8.18,
+                                "w": 504.01,
+                                "x": 53.8,
+                                "y": 60.13,
+                                "confidence": null,
+                                "end_index": null,
+                                "label": null,
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "header"
+                    },
+                    {
+                        "md": "Table 1: DocLayNet dataset overview. Along with the frequency of each class label, we present the relative occurrence (as % of row “Total”) in the train, test and validation sets. The inter-annotator agreement is computed as the mAP\\@0.5-0.95 metric between pairwise annotations from the triple-annotated pages, from which we obtain accuracy ranges.",
+                        "value": "Table 1: DocLayNet dataset overview. Along with the frequency of each class label, we present the relative occurrence (as % of row “Total”) in the train, test and validation sets. The inter-annotator agreement is computed as the mAP@0.5-0.95 metric between pairwise annotations from the triple-annotated pages, from which we obtain accuracy ranges.",
+                        "bbox": [
+                            {
+                                "h": 30.97,
+                                "w": 505.18,
+                                "x": 53.5,
+                                "y": 84.9,
+                                "confidence": 0.9,
+                                "end_index": 348,
+                                "label": "caption",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "csv": "\"class label\",\"Count\",\"% of Total<br/>Train\",\"% of Total<br/>Test\",\"% of Total<br/>Val\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>All\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Fin\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Man\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Sci\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Law\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Pat\",\"triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Ten\"\n\"Caption\",\"22524\",\"2.04\",\"1.77\",\"2.32\",\"84-89\",\"40-61\",\"86-92\",\"94-99\",\"95-99\",\"69-78\",\"n/a\"\n\"Footnote\",\"6318\",\"0.60\",\"0.31\",\"0.58\",\"83-91\",\"n/a\",\"100\",\"62-88\",\"85-94\",\"n/a\",\"82-97\"\n\"Formula\",\"25027\",\"2.25\",\"1.90\",\"2.96\",\"83-85\",\"n/a\",\"n/a\",\"84-87\",\"86-96\",\"n/a\",\"n/a\"\n\"List-item\",\"185660\",\"17.19\",\"13.34\",\"15.82\",\"87-88\",\"74-83\",\"90-92\",\"97-97\",\"81-85\",\"75-88\",\"93-95\"\n\"Page-footer\",\"70878\",\"6.51\",\"5.58\",\"6.00\",\"93-94\",\"88-90\",\"95-96\",\"100\",\"92-97\",\"100\",\"96-98\"\n\"Page-header\",\"58022\",\"5.10\",\"6.70\",\"5.06\",\"85-89\",\"66-76\",\"90-94\",\"98-100\",\"91-92\",\"97-99\",\"81-86\"\n\"Picture\",\"45976\",\"4.21\",\"2.78\",\"5.31\",\"69-71\",\"56-59\",\"82-86\",\"69-82\",\"80-95\",\"66-71\",\"59-76\"\n\"Section-header\",\"142884\",\"12.60\",\"15.77\",\"12.85\",\"83-84\",\"76-81\",\"90-92\",\"94-95\",\"87-94\",\"69-73\",\"78-86\"\n\"Table\",\"34733\",\"3.20\",\"2.27\",\"3.60\",\"77-81\",\"75-80\",\"83-86\",\"98-99\",\"58-80\",\"79-84\",\"70-85\"\n\"Text\",\"510377\",\"45.82\",\"49.28\",\"45.00\",\"84-86\",\"81-86\",\"88-93\",\"89-93\",\"87-92\",\"71-79\",\"87-95\"\n\"Title\",\"5071\",\"0.47\",\"0.30\",\"0.50\",\"60-72\",\"24-63\",\"50-63\",\"94-100\",\"82-96\",\"68-79\",\"24-56\"\n\"Total\",\"1107470\",\"941123\",\"99816\",\"66531\",\"82-83\",\"71-74\",\"79-81\",\"89-94\",\"86-91\",\"71-76\",\"68-85\"",
+                        "html": "<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th> </th>\n        <th colspan=\"3\">% of Total</th>\n        <th colspan=\"7\">triple inter-annotator mAP @ 0.5-0.95 (%)</th>\n    </tr>\n    <tr>\n        <th>class label</th>\n        <th>Count</th>\n        <th>Train</th>\n        <th>Test</th>\n        <th>Val</th>\n        <th>All</th>\n        <th>Fin</th>\n        <th>Man</th>\n        <th>Sci</th>\n        <th>Law</th>\n        <th>Pat</th>\n        <th>Ten</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Caption</td>\n        <td>22524</td>\n        <td>2.04</td>\n        <td>1.77</td>\n        <td>2.32</td>\n        <td>84-89</td>\n        <td>40-61</td>\n        <td>86-92</td>\n        <td>94-99</td>\n        <td>95-99</td>\n        <td>69-78</td>\n        <td>n/a</td>\n    </tr>\n    <tr>\n        <td>Footnote</td>\n        <td>6318</td>\n        <td>0.60</td>\n        <td>0.31</td>\n        <td>0.58</td>\n        <td>83-91</td>\n        <td>n/a</td>\n        <td>100</td>\n        <td>62-88</td>\n        <td>85-94</td>\n        <td>n/a</td>\n        <td>82-97</td>\n    </tr>\n    <tr>\n        <td>Formula</td>\n        <td>25027</td>\n        <td>2.25</td>\n        <td>1.90</td>\n        <td>2.96</td>\n        <td>83-85</td>\n        <td>n/a</td>\n        <td>n/a</td>\n        <td>84-87</td>\n        <td>86-96</td>\n        <td>n/a</td>\n        <td>n/a</td>\n    </tr>\n    <tr>\n        <td>List-item</td>\n        <td>185660</td>\n        <td>17.19</td>\n        <td>13.34</td>\n        <td>15.82</td>\n        <td>87-88</td>\n        <td>74-83</td>\n        <td>90-92</td>\n        <td>97-97</td>\n        <td>81-85</td>\n        <td>75-88</td>\n        <td>93-95</td>\n    </tr>\n    <tr>\n        <td>Page-footer</td>\n        <td>70878</td>\n        <td>6.51</td>\n        <td>5.58</td>\n        <td>6.00</td>\n        <td>93-94</td>\n        <td>88-90</td>\n        <td>95-96</td>\n        <td>100</td>\n        <td>92-97</td>\n        <td>100</td>\n        <td>96-98</td>\n    </tr>\n    <tr>\n        <td>Page-header</td>\n        <td>58022</td>\n        <td>5.10</td>\n        <td>6.70</td>\n        <td>5.06</td>\n        <td>85-89</td>\n        <td>66-76</td>\n        <td>90-94</td>\n        <td>98-100</td>\n        <td>91-92</td>\n        <td>97-99</td>\n        <td>81-86</td>\n    </tr>\n    <tr>\n        <td>Picture</td>\n        <td>45976</td>\n        <td>4.21</td>\n        <td>2.78</td>\n        <td>5.31</td>\n        <td>69-71</td>\n        <td>56-59</td>\n        <td>82-86</td>\n        <td>69-82</td>\n        <td>80-95</td>\n        <td>66-71</td>\n        <td>59-76</td>\n    </tr>\n    <tr>\n        <td>Section-header</td>\n        <td>142884</td>\n        <td>12.60</td>\n        <td>15.77</td>\n        <td>12.85</td>\n        <td>83-84</td>\n        <td>76-81</td>\n        <td>90-92</td>\n        <td>94-95</td>\n        <td>87-94</td>\n        <td>69-73</td>\n        <td>78-86</td>\n    </tr>\n    <tr>\n        <td>Table</td>\n        <td>34733</td>\n        <td>3.20</td>\n        <td>2.27</td>\n        <td>3.60</td>\n        <td>77-81</td>\n        <td>75-80</td>\n        <td>83-86</td>\n        <td>98-99</td>\n        <td>58-80</td>\n        <td>79-84</td>\n        <td>70-85</td>\n    </tr>\n    <tr>\n        <td>Text</td>\n        <td>510377</td>\n        <td>45.82</td>\n        <td>49.28</td>\n        <td>45.00</td>\n        <td>84-86</td>\n        <td>81-86</td>\n        <td>88-93</td>\n        <td>89-93</td>\n        <td>87-92</td>\n        <td>71-79</td>\n        <td>87-95</td>\n    </tr>\n    <tr>\n        <td>Title</td>\n        <td>5071</td>\n        <td>0.47</td>\n        <td>0.30</td>\n        <td>0.50</td>\n        <td>60-72</td>\n        <td>24-63</td>\n        <td>50-63</td>\n        <td>94-100</td>\n        <td>82-96</td>\n        <td>68-79</td>\n        <td>24-56</td>\n    </tr>\n    <tr>\n        <td>Total</td>\n        <td>1107470</td>\n        <td>941123</td>\n        <td>99816</td>\n        <td>66531</td>\n        <td>82-83</td>\n        <td>71-74</td>\n        <td>79-81</td>\n        <td>89-94</td>\n        <td>86-91</td>\n        <td>71-76</td>\n        <td>68-85</td>\n    </tr>\n  </tbody>\n</table>",
+                        "md": "| class label    | Count   | % of Total<br/>Train | % of Total<br/>Test | % of Total<br/>Val | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>All | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Fin | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Man | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Sci | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Law | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Pat | triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Ten |\n| -------------- | ------- | -------------------- | ------------------- | ------------------ | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |\n| Caption        | 22524   | 2.04                 | 1.77                | 2.32               | 84-89                                             | 40-61                                             | 86-92                                             | 94-99                                             | 95-99                                             | 69-78                                             | n/a                                               |\n| Footnote       | 6318    | 0.60                 | 0.31                | 0.58               | 83-91                                             | n/a                                               | 100                                               | 62-88                                             | 85-94                                             | n/a                                               | 82-97                                             |\n| Formula        | 25027   | 2.25                 | 1.90                | 2.96               | 83-85                                             | n/a                                               | n/a                                               | 84-87                                             | 86-96                                             | n/a                                               | n/a                                               |\n| List-item      | 185660  | 17.19                | 13.34               | 15.82              | 87-88                                             | 74-83                                             | 90-92                                             | 97-97                                             | 81-85                                             | 75-88                                             | 93-95                                             |\n| Page-footer    | 70878   | 6.51                 | 5.58                | 6.00               | 93-94                                             | 88-90                                             | 95-96                                             | 100                                               | 92-97                                             | 100                                               | 96-98                                             |\n| Page-header    | 58022   | 5.10                 | 6.70                | 5.06               | 85-89                                             | 66-76                                             | 90-94                                             | 98-100                                            | 91-92                                             | 97-99                                             | 81-86                                             |\n| Picture        | 45976   | 4.21                 | 2.78                | 5.31               | 69-71                                             | 56-59                                             | 82-86                                             | 69-82                                             | 80-95                                             | 66-71                                             | 59-76                                             |\n| Section-header | 142884  | 12.60                | 15.77               | 12.85              | 83-84                                             | 76-81                                             | 90-92                                             | 94-95                                             | 87-94                                             | 69-73                                             | 78-86                                             |\n| Table          | 34733   | 3.20                 | 2.27                | 3.60               | 77-81                                             | 75-80                                             | 83-86                                             | 98-99                                             | 58-80                                             | 79-84                                             | 70-85                                             |\n| Text           | 510377  | 45.82                | 49.28               | 45.00              | 84-86                                             | 81-86                                             | 88-93                                             | 89-93                                             | 87-92                                             | 71-79                                             | 87-95                                             |\n| Title          | 5071    | 0.47                 | 0.30                | 0.50               | 60-72                                             | 24-63                                             | 50-63                                             | 94-100                                            | 82-96                                             | 68-79                                             | 24-56                                             |\n| Total          | 1107470 | 941123               | 99816               | 66531              | 82-83                                             | 71-74                                             | 79-81                                             | 89-94                                             | 86-91                                             | 71-76                                             | 68-85                                             |",
+                        "rows": [
+                            [
+                                "class label",
+                                "Count",
+                                "% of Total<br/>Train",
+                                "% of Total<br/>Test",
+                                "% of Total<br/>Val",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>All",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Fin",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Man",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Sci",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Law",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Pat",
+                                "triple inter-annotator mAP @ 0.5-0.95 (%)<br/>Ten"
+                            ],
+                            [
+                                "Caption",
+                                "22524",
+                                "2.04",
+                                "1.77",
+                                "2.32",
+                                "84-89",
+                                "40-61",
+                                "86-92",
+                                "94-99",
+                                "95-99",
+                                "69-78",
+                                "n/a"
+                            ],
+                            [
+                                "Footnote",
+                                "6318",
+                                "0.60",
+                                "0.31",
+                                "0.58",
+                                "83-91",
+                                "n/a",
+                                "100",
+                                "62-88",
+                                "85-94",
+                                "n/a",
+                                "82-97"
+                            ],
+                            [
+                                "Formula",
+                                "25027",
+                                "2.25",
+                                "1.90",
+                                "2.96",
+                                "83-85",
+                                "n/a",
+                                "n/a",
+                                "84-87",
+                                "86-96",
+                                "n/a",
+                                "n/a"
+                            ],
+                            [
+                                "List-item",
+                                "185660",
+                                "17.19",
+                                "13.34",
+                                "15.82",
+                                "87-88",
+                                "74-83",
+                                "90-92",
+                                "97-97",
+                                "81-85",
+                                "75-88",
+                                "93-95"
+                            ],
+                            [
+                                "Page-footer",
+                                "70878",
+                                "6.51",
+                                "5.58",
+                                "6.00",
+                                "93-94",
+                                "88-90",
+                                "95-96",
+                                "100",
+                                "92-97",
+                                "100",
+                                "96-98"
+                            ],
+                            [
+                                "Page-header",
+                                "58022",
+                                "5.10",
+                                "6.70",
+                                "5.06",
+                                "85-89",
+                                "66-76",
+                                "90-94",
+                                "98-100",
+                                "91-92",
+                                "97-99",
+                                "81-86"
+                            ],
+                            [
+                                "Picture",
+                                "45976",
+                                "4.21",
+                                "2.78",
+                                "5.31",
+                                "69-71",
+                                "56-59",
+                                "82-86",
+                                "69-82",
+                                "80-95",
+                                "66-71",
+                                "59-76"
+                            ],
+                            [
+                                "Section-header",
+                                "142884",
+                                "12.60",
+                                "15.77",
+                                "12.85",
+                                "83-84",
+                                "76-81",
+                                "90-92",
+                                "94-95",
+                                "87-94",
+                                "69-73",
+                                "78-86"
+                            ],
+                            [
+                                "Table",
+                                "34733",
+                                "3.20",
+                                "2.27",
+                                "3.60",
+                                "77-81",
+                                "75-80",
+                                "83-86",
+                                "98-99",
+                                "58-80",
+                                "79-84",
+                                "70-85"
+                            ],
+                            [
+                                "Text",
+                                "510377",
+                                "45.82",
+                                "49.28",
+                                "45.00",
+                                "84-86",
+                                "81-86",
+                                "88-93",
+                                "89-93",
+                                "87-92",
+                                "71-79",
+                                "87-95"
+                            ],
+                            [
+                                "Title",
+                                "5071",
+                                "0.47",
+                                "0.30",
+                                "0.50",
+                                "60-72",
+                                "24-63",
+                                "50-63",
+                                "94-100",
+                                "82-96",
+                                "68-79",
+                                "24-56"
+                            ],
+                            [
+                                "Total",
+                                "1107470",
+                                "941123",
+                                "99816",
+                                "66531",
+                                "82-83",
+                                "71-74",
+                                "79-81",
+                                "89-94",
+                                "86-91",
+                                "71-76",
+                                "68-85"
+                            ]
+                        ],
+                        "bbox": [
+                            {
+                                "h": 156.51,
+                                "w": 415.21,
+                                "x": 98.07,
+                                "y": 137.69,
+                                "confidence": 0.9,
+                                "end_index": 6424,
+                                "label": "table",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "merged_from_pages": null,
+                        "merged_into_page": null,
+                        "parse_concerns": [
+                            {
+                                "details": "col 2 '% of Total' expects numeric, got 'Train' in row 1",
+                                "type": "header_value_type_mismatch"
+                            }
+                        ],
+                        "type": "table"
+                    },
+                    {
+                        "md": "screenshot: Corpus Conversion Service annotation user interface",
+                        "value": "screenshot: Corpus Conversion Service annotation user interface",
+                        "bbox": [
+                            {
+                                "h": 167.06,
+                                "w": 64.59,
+                                "x": 223.96,
+                                "y": 315.56,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 124.74,
+                                "w": 24.0,
+                                "x": 116.31,
+                                "y": 326.7,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 113.11,
+                                "w": 28.46,
+                                "x": 170.26,
+                                "y": 344.77,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 5.69,
+                                "w": 34.65,
+                                "x": 240.54,
+                                "y": 526.93,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 6.43,
+                                "w": 10.15,
+                                "x": 106.91,
+                                "y": 528.41,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 5.94,
+                                "w": 15.34,
+                                "x": 155.41,
+                                "y": 528.41,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 5.45,
+                                "w": 11.38,
+                                "x": 130.91,
+                                "y": 528.91,
+                                "confidence": 0.97,
+                                "end_index": 62,
+                                "label": "image",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "Figure 3: Corpus Conversion Service annotation user interface. The PDF page is shown in the background, with overlaid text-cells (in darker shades). The annotation boxes can be drawn by dragging a rectangle over each segment with the respective label from the palette on the right.",
+                        "value": "Figure 3: Corpus Conversion Service annotation user interface. The PDF page is shown in the background, with overlaid text-cells (in darker shades). The annotation boxes can be drawn by dragging a rectangle over each segment with the respective label from the palette on the right.",
+                        "bbox": [
+                            {
+                                "h": 53.14,
+                                "w": 243.24,
+                                "x": 53.02,
+                                "y": 553.5,
+                                "confidence": 0.98,
+                                "end_index": 280,
+                                "label": "caption",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "we distributed the annotation workload and performed continuous quality controls. Phase one and two required a small team of experts only. For phases three and four, a group of 40 dedicated annotators were assembled and supervised.",
+                        "value": "we distributed the annotation workload and performed continuous quality controls. Phase one and two required a small team of experts only. For phases three and four, a group of 40 dedicated annotators were assembled and supervised.",
+                        "bbox": [
+                            {
+                                "h": 40.88,
+                                "w": 240.88,
+                                "x": 53.47,
+                                "y": 634.29,
+                                "confidence": 0.99,
+                                "end_index": 230,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "Phase 1: Data selection and preparation. Our inclusion criteria for documents were described in Section 3. A large effort went into ensuring that all documents are free to use. The data sources",
+                        "value": "Phase 1: Data selection and preparation. Our inclusion criteria for documents were described in Section 3. A large effort went into ensuring that all documents are free to use. The data sources",
+                        "bbox": [
+                            {
+                                "h": 30.04,
+                                "w": 241.87,
+                                "x": 53.8,
+                                "y": 678.01,
+                                "confidence": 0.96,
+                                "end_index": 192,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "include publication repositories such as arXiv<sup>3</sup>, government offices, company websites as well as data directory services for financial reports and patents. Scanned documents were excluded wherever possible because they can be rotated or skewed. This would not allow us to perform annotation with rectangular bounding-boxes and therefore complicate the annotation process.",
+                        "value": "include publication repositories such as arXiv<sup>3</sup>, government offices, company websites as well as data directory services for financial reports and patents. Scanned documents were excluded wherever possible because they can be rotated or skewed. This would not allow us to perform annotation with rectangular bounding-boxes and therefore complicate the annotation process.",
+                        "bbox": [
+                            {
+                                "h": 65.1,
+                                "w": 242.38,
+                                "x": 316.89,
+                                "y": 310.69,
+                                "confidence": 0.99,
+                                "end_index": 381,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "Preparation work included uploading and parsing the sourced PDF documents in the Corpus Conversion Service (CCS) [22], a cloud-native platform which provides a visual annotation interface and allows for dataset inspection and analysis. The annotation interface of CCS is shown in Figure 3. The desired balance of pages between the different document categories was achieved by selective subsampling of pages with certain desired properties. For example, we made sure to include the title page of each document and bias the remaining page selection to those with figures or tables. The latter was achieved by leveraging pre-trained object detection models from PubLayNet, which helped us estimate how many figures and tables a given page contains.",
+                        "value": "Preparation work included uploading and parsing the sourced PDF documents in the Corpus Conversion Service (CCS) [22], a cloud-native platform which provides a visual annotation interface and allows for dataset inspection and analysis. The annotation interface of CCS is shown in Figure 3. The desired balance of pages between the different document categories was achieved by selective subsampling of pages with certain desired properties. For example, we made sure to include the title page of each document and bias the remaining page selection to those with figures or tables. The latter was achieved by leveraging pre-trained object detection models from PubLayNet, which helped us estimate how many figures and tables a given page contains.",
+                        "bbox": [
+                            {
+                                "h": 130.87,
+                                "w": 242.58,
+                                "x": 316.72,
+                                "y": 376.53,
+                                "confidence": 0.99,
+                                "end_index": 745,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "Phase 2: Label selection and guideline. We reviewed the collected documents and identified the most common structural features they exhibit. This was achieved by identifying recurrent layout elements and lead us to the definition of 11 distinct class labels. These 11 class labels are Caption, Footnote, Formula, List-item, Page-footer, Page-header, Picture, Section-header, Table, Text, and Title. Critical factors that were considered for the choice of these class labels were (1) the overall occurrence of the label, (2) the specificity of the label, (3) recognisability on a single page (i.e. no need for context from previous or next page) and (4) overall coverage of the page. Specificity ensures that the choice of label is not ambiguous, while coverage ensures that all meaningful items on a page can be annotated. We refrained from class labels that are very specific to a document category, such as Abstract in the Scientific Articles category. We also avoided class labels that are tightly linked to the semantics of the text. Labels such as Author and Affiliation, as seen in DocBank, are often only distinguishable by discriminating on",
+                        "value": "Phase 2: Label selection and guideline. We reviewed the collected documents and identified the most common structural features they exhibit. This was achieved by identifying recurrent layout elements and lead us to the definition of 11 distinct class labels. These 11 class labels are Caption, Footnote, Formula, List-item, Page-footer, Page-header, Picture, Section-header, Table, Text, and Title. Critical factors that were considered for the choice of these class labels were (1) the overall occurrence of the label, (2) the specificity of the label, (3) recognisability on a single page (i.e. no need for context from previous or next page) and (4) overall coverage of the page. Specificity ensures that the choice of label is not ambiguous, while coverage ensures that all meaningful items on a page can be annotated. We refrained from class labels that are very specific to a document category, such as Abstract in the Scientific Articles category. We also avoided class labels that are tightly linked to the semantics of the text. Labels such as Author and Affiliation, as seen in DocBank, are often only distinguishable by discriminating on",
+                        "bbox": [
+                            {
+                                "h": 185.39,
+                                "w": 243.75,
+                                "x": 316.38,
+                                "y": 508.04,
+                                "confidence": 0.99,
+                                "end_index": 1147,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 5.197499999999991,
+                                "w": 64.34290335624746,
+                                "x": 224.21027092600082,
+                                "y": 322.98749999999995,
+                                "confidence": 0.99,
+                                "end_index": null,
+                                "label": "text",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 229.91556084674335,
+                                "w": 242.82145127006197,
+                                "x": 52.92967788032863,
+                                "y": 310.7383674953295,
+                                "confidence": 0.99,
+                                "end_index": null,
+                                "label": "image",
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "<sup>3</sup>",
+                        "value": "<sup>3</sup>",
+                        "bbox": [
+                            {
+                                "h": 9.01,
+                                "w": 52.22,
+                                "x": 317.44,
+                                "y": 700.44,
+                                "confidence": 0.5,
+                                "end_index": null,
+                                "label": "footnote",
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "https://arxiv.org/",
+                        "text": "https://arxiv.org/",
+                        "url": "https://arxiv.org/",
+                        "bbox": [
+                            {
+                                "h": 10.4,
+                                "w": 50.24,
+                                "x": 320.01,
+                                "y": 700.23,
+                                "confidence": 1.0,
+                                "end_index": 17,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "link"
+                    }
+                ],
+                "page_height": 792.0,
+                "page_number": 1,
+                "page_width": 612.0,
+                "success": true,
+                "revisions": null
+            }
+        ]
+    },
+    "job_metadata": null,
+    "markdown": null,
+    "markdown_full": null,
+    "metadata": null,
+    "raw_parameters": null,
+    "result_content_metadata": null,
+    "text": null,
+    "text_full": null,
+    "debug": null
+}

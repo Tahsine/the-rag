@@ -1,0 +1,540 @@
+{
+    "job": {
+        "id": "pjb-dj0jvf8kzlhrtyri48cb3y4bj69g",
+        "project_id": "d4523271-f706-4be2-afa8-4d8a929d16f5",
+        "status": "COMPLETED",
+        "created_at": "2026-09-08 20:35:22.718481+00:00",
+        "error_message": null,
+        "name": "2206.01062v1-pages-5.pdf",
+        "tier": "agentic",
+        "updated_at": "2026-09-08 20:35:44.353218+00:00",
+        "usage": null,
+        "user_metadata": null
+    },
+    "forms": null,
+    "images_content_metadata": null,
+    "items": {
+        "pages": [
+            {
+                "items": [
+                    {
+                        "items": [
+                            {
+                                "md": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+                                "value": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+                                "bbox": [
+                                    {
+                                        "h": 8.12,
+                                        "w": 293.2,
+                                        "x": 53.8,
+                                        "y": 60.19,
+                                        "confidence": 0.95,
+                                        "end_index": 70,
+                                        "label": "header",
+                                        "r": null,
+                                        "start_index": 0
+                                    }
+                                ],
+                                "type": "text"
+                            },
+                            {
+                                "md": "KDD ’22, August 14–18, 2022, Washington, DC, USA",
+                                "value": "KDD ’22, August 14–18, 2022, Washington, DC, USA",
+                                "bbox": [
+                                    {
+                                        "h": 8.18,
+                                        "w": 192.06,
+                                        "x": 365.76,
+                                        "y": 60.13,
+                                        "confidence": 0.96,
+                                        "end_index": 47,
+                                        "label": "header",
+                                        "r": null,
+                                        "start_index": 0
+                                    }
+                                ],
+                                "type": "text"
+                            }
+                        ],
+                        "md": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis\n\nKDD ’22, August 14–18, 2022, Washington, DC, USA",
+                        "bbox": [
+                            {
+                                "h": 8.18,
+                                "w": 504.02,
+                                "x": 53.8,
+                                "y": 60.13,
+                                "confidence": null,
+                                "end_index": null,
+                                "label": null,
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "header"
+                    },
+                    {
+                        "md": "the textual content of an element, which goes beyond visual layout recognition, in particular outside the *Scientific Articles* category.",
+                        "value": "the textual content of an element, which goes beyond visual layout recognition, in particular outside the Scientific Articles category.",
+                        "bbox": [
+                            {
+                                "h": 18.99,
+                                "w": 240.58,
+                                "x": 53.8,
+                                "y": 87.36,
+                                "confidence": 0.98,
+                                "end_index": 136,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "At first sight, the task of visual document-layout interpretation appears intuitive enough to obtain plausible annotations in most cases. However, during early trial-runs in the core team, we observed many cases in which annotators use different annotation styles, especially for documents with challenging layouts. For example, if a figure is presented with subfigures, one annotator might draw a single figure bounding-box, while another might annotate each subfigure separately. The same applies for lists, where one might annotate all list items in one block or each list item separately. In essence, we observed that challenging layouts would be annotated in different but plausible ways. To illustrate this, we show in Figure 4 multiple examples of plausible but inconsistent annotations on the same pages.",
+                        "value": "At first sight, the task of visual document-layout interpretation appears intuitive enough to obtain plausible annotations in most cases. However, during early trial-runs in the core team, we observed many cases in which annotators use different annotation styles, especially for documents with challenging layouts. For example, if a figure is presented with subfigures, one annotator might draw a single figure bounding-box, while another might annotate each subfigure separately. The same applies for lists, where one might annotate all list items in one block or each list item separately. In essence, we observed that challenging layouts would be annotated in different but plausible ways. To illustrate this, we show in Figure 4 multiple examples of plausible but inconsistent annotations on the same pages.",
+                        "bbox": [
+                            {
+                                "h": 140.97,
+                                "w": 242.0,
+                                "x": 53.08,
+                                "y": 108.18,
+                                "confidence": 0.99,
+                                "end_index": 811,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "Obviously, this inconsistency in annotations is not desirable for datasets which are intended to be used for model training. To minimise these inconsistencies, we created a detailed annotation guideline. While perfect consistency across 40 annotation staff members is clearly not possible to achieve, we saw a huge improvement in annotation consistency after the introduction of our annotation guideline. A few selected, non-trivial highlights of the guideline are:",
+                        "value": "Obviously, this inconsistency in annotations is not desirable for datasets which are intended to be used for model training. To minimise these inconsistencies, we created a detailed annotation guideline. While perfect consistency across 40 annotation staff members is clearly not possible to achieve, we saw a huge improvement in annotation consistency after the introduction of our annotation guideline. A few selected, non-trivial highlights of the guideline are:",
+                        "bbox": [
+                            {
+                                "h": 84.48,
+                                "w": 242.49,
+                                "x": 52.94,
+                                "y": 250.79,
+                                "confidence": 0.99,
+                                "end_index": 464,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(1) Every list-item is an individual object instance with class label *List-item*. This definition is different from PubLayNet and DocBank, where all list-items are grouped together into one *List* object.",
+                        "value": "(1) Every list-item is an individual object instance with class label List-item. This definition is different from PubLayNet and DocBank, where all list-items are grouped together into one List object.",
+                        "bbox": [
+                            {
+                                "h": 40.98,
+                                "w": 229.7,
+                                "x": 64.71,
+                                "y": 348.45,
+                                "confidence": 0.99,
+                                "end_index": 204,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(2) A *List-item* is a paragraph with hanging indentation. Single-line elements can qualify as *List-item* if the neighbour elements expose hanging indentation. Bullet or enumeration symbols are not a requirement.",
+                        "value": "(2) A List-item is a paragraph with hanging indentation. Single-line elements can qualify as List-item if the neighbour elements expose hanging indentation. Bullet or enumeration symbols are not a requirement.",
+                        "bbox": [
+                            {
+                                "h": 40.94,
+                                "w": 231.17,
+                                "x": 64.71,
+                                "y": 392.29,
+                                "confidence": 0.99,
+                                "end_index": 212,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(3) For every *Caption*, there must be exactly one corresponding *Picture* or *Table*.",
+                        "value": "(3) For every Caption, there must be exactly one corresponding Picture or Table.",
+                        "bbox": [
+                            {
+                                "h": 19.21,
+                                "w": 230.86,
+                                "x": 63.75,
+                                "y": 435.3,
+                                "confidence": 0.98,
+                                "end_index": 85,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(4) Connected sub-pictures are grouped together in one *Picture* object.",
+                        "value": "(4) Connected sub-pictures are grouped together in one Picture object.",
+                        "bbox": [
+                            {
+                                "h": 19.02,
+                                "w": 230.0,
+                                "x": 64.71,
+                                "y": 458.04,
+                                "confidence": 0.98,
+                                "end_index": 71,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(5) Formula numbers are included in a *Formula* object.",
+                        "value": "(5) Formula numbers are included in a Formula object.",
+                        "bbox": [
+                            {
+                                "h": 8.09,
+                                "w": 199.71,
+                                "x": 64.71,
+                                "y": 479.96,
+                                "confidence": 0.97,
+                                "end_index": 54,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "(6) Emphasised text (e.g. in italic or bold) at the beginning of a paragraph is not considered a *Section-header*, unless it appears exclusively on its own line.",
+                        "value": "(6) Emphasised text (e.g. in italic or bold) at the beginning of a paragraph is not considered a Section-header, unless it appears exclusively on its own line.",
+                        "bbox": [
+                            {
+                                "h": 29.98,
+                                "w": 229.89,
+                                "x": 64.71,
+                                "y": 490.92,
+                                "confidence": 0.99,
+                                "end_index": 160,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "The complete annotation guideline is over 100 pages long and a detailed description is obviously out of scope for this paper. Nevertheless, it will be made publicly available alongside with DocLayNet for future reference.",
+                        "value": "The complete annotation guideline is over 100 pages long and a detailed description is obviously out of scope for this paper. Nevertheless, it will be made publicly available alongside with DocLayNet for future reference.",
+                        "bbox": [
+                            {
+                                "h": 41.09,
+                                "w": 242.3,
+                                "x": 52.9,
+                                "y": 532.14,
+                                "confidence": 0.99,
+                                "end_index": 220,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "**Phase 3: Training.** After a first trial with a small group of people, we realised that providing the annotation guideline and a set of random practice pages did not yield the desired quality level for layout annotation. Therefore we prepared a subset of pages with two different complexity levels, each with a practice and an exam part. 974 pages were reference-annotated by one proficient core team member. Annotation staff were then given the task to annotate the same subsets (blinded from the reference). By comparing the annotations of each staff member with the reference annotations, we could quantify how closely their annotations matched the reference. Only after passing two exam levels with high annotation quality, staff were admitted into the production phase. Practice iterations",
+                        "value": "Phase 3: Training. After a first trial with a small group of people, we realised that providing the annotation guideline and a set of random practice pages did not yield the desired quality level for layout annotation. Therefore we prepared a subset of pages with two different complexity levels, each with a practice and an exam part. 974 pages were reference-annotated by one proficient core team member. Annotation staff were then given the task to annotate the same subsets (blinded from the reference). By comparing the annotations of each staff member with the reference annotations, we could quantify how closely their annotations matched the reference. Only after passing two exam levels with high annotation quality, staff were admitted into the production phase. Practice iterations",
+                        "bbox": [
+                            {
+                                "h": 129.74,
+                                "w": 243.15,
+                                "x": 52.98,
+                                "y": 575.96,
+                                "confidence": 0.99,
+                                "end_index": 795,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "csv": ",\"Compliant with guidelines\",\"Plausible but invalid alternative\"\n\"A\",\"page_thumbnail: compliant annotation A\",\"page_thumbnail: invalid alternative A\"\n,\"1ef23f5e6d7f10d393f9947e8208285dce9ae87250ac483ac4b4a59d51b4e037\",\n\"B\",\"page_thumbnail: compliant annotation B\",\"page_thumbnail: invalid alternative B\"\n,\"03c31a2ee1ed1b583c28957f475ee545d144e1b5a264dc4dd068c8d2f6a64860\",\n\"C\",\"page_thumbnail: compliant annotation C\",\"page_thumbnail: invalid alternative C\"\n,\"1a5cd524f1844c1260c8e8c073e1f442423c264583212b0d0b6626fc780e6ed4\",\n\"D\",\"Borderline case: Two guideline-compliant alternatives\",\n,\"page_thumbnail: compliant alternative D1\",\"page_thumbnail: compliant alternative D2\"\n,\"05237a14f2524e3f53c8454b074409d05078038a6a36b770fcc8ec7e540deae0\",",
+                        "html": "<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th>Compliant with guidelines</th>\n        <th>Plausible but invalid alternative</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>A</td>\n        <td>page_thumbnail: compliant annotation A</td>\n        <td>page_thumbnail: invalid alternative A</td>\n    </tr>\n    <tr>\n        <td> </td>\n        <td>1ef23f5e6d7f10d393f9947e8208285dce9ae87250ac483ac4b4a59d51b4e037</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>B</td>\n        <td>page_thumbnail: compliant annotation B</td>\n        <td>page_thumbnail: invalid alternative B</td>\n    </tr>\n    <tr>\n        <td> </td>\n        <td>03c31a2ee1ed1b583c28957f475ee545d144e1b5a264dc4dd068c8d2f6a64860</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>C</td>\n        <td>page_thumbnail: compliant annotation C</td>\n        <td>page_thumbnail: invalid alternative C</td>\n    </tr>\n    <tr>\n        <td> </td>\n        <td>1a5cd524f1844c1260c8e8c073e1f442423c264583212b0d0b6626fc780e6ed4</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>D</td>\n        <td colspan=\"2\">Borderline case: Two guideline-compliant alternatives</td>\n    </tr>\n    <tr>\n        <td> </td>\n        <td>page_thumbnail: compliant alternative D1</td>\n        <td>page_thumbnail: compliant alternative D2</td>\n    </tr>\n    <tr>\n        <td> </td>\n        <td colspan=\"2\">05237a14f2524e3f53c8454b074409d05078038a6a36b770fcc8ec7e540deae0</td>\n    </tr>\n  </tbody>\n</table>",
+                        "md": "|   | Compliant with guidelines                                        | Plausible but invalid alternative         |\n| - | ---------------------------------------------------------------- | ----------------------------------------- |\n| A | page\\_thumbnail: compliant annotation A                          | page\\_thumbnail: invalid alternative A    |\n|   | 1ef23f5e6d7f10d393f9947e8208285dce9ae87250ac483ac4b4a59d51b4e037 |                                           |\n| B | page\\_thumbnail: compliant annotation B                          | page\\_thumbnail: invalid alternative B    |\n|   | 03c31a2ee1ed1b583c28957f475ee545d144e1b5a264dc4dd068c8d2f6a64860 |                                           |\n| C | page\\_thumbnail: compliant annotation C                          | page\\_thumbnail: invalid alternative C    |\n|   | 1a5cd524f1844c1260c8e8c073e1f442423c264583212b0d0b6626fc780e6ed4 |                                           |\n| D | Borderline case: Two guideline-compliant alternatives            |                                           |\n|   | page\\_thumbnail: compliant alternative D1                        | page\\_thumbnail: compliant alternative D2 |\n|   | 05237a14f2524e3f53c8454b074409d05078038a6a36b770fcc8ec7e540deae0 |                                           |",
+                        "rows": [
+                            [
+                                "",
+                                "Compliant with guidelines",
+                                "Plausible but invalid alternative"
+                            ],
+                            [
+                                "A",
+                                "page_thumbnail: compliant annotation A",
+                                "page_thumbnail: invalid alternative A"
+                            ],
+                            [
+                                "",
+                                "1ef23f5e6d7f10d393f9947e8208285dce9ae87250ac483ac4b4a59d51b4e037",
+                                ""
+                            ],
+                            [
+                                "B",
+                                "page_thumbnail: compliant annotation B",
+                                "page_thumbnail: invalid alternative B"
+                            ],
+                            [
+                                "",
+                                "03c31a2ee1ed1b583c28957f475ee545d144e1b5a264dc4dd068c8d2f6a64860",
+                                ""
+                            ],
+                            [
+                                "C",
+                                "page_thumbnail: compliant annotation C",
+                                "page_thumbnail: invalid alternative C"
+                            ],
+                            [
+                                "",
+                                "1a5cd524f1844c1260c8e8c073e1f442423c264583212b0d0b6626fc780e6ed4",
+                                ""
+                            ],
+                            [
+                                "D",
+                                "Borderline case: Two guideline-compliant alternatives",
+                                ""
+                            ],
+                            [
+                                "",
+                                "page_thumbnail: compliant alternative D1",
+                                "page_thumbnail: compliant alternative D2"
+                            ],
+                            [
+                                "",
+                                "05237a14f2524e3f53c8454b074409d05078038a6a36b770fcc8ec7e540deae0",
+                                ""
+                            ]
+                        ],
+                        "bbox": [
+                            {
+                                "h": 114.42,
+                                "w": 121.29,
+                                "x": 317.1,
+                                "y": 248.1,
+                                "confidence": 0.64,
+                                "end_index": 1285,
+                                "label": "table",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 7.0,
+                                "w": 206.01100000000002,
+                                "x": 339.383,
+                                "y": 85.191,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 6.0,
+                                "w": 4.0,
+                                "x": 322.194,
+                                "y": 98.341,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 2.0,
+                                "w": 76.0,
+                                "x": 340.002,
+                                "y": 179.793,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 6.0,
+                                "w": 4.0,
+                                "x": 322.194,
+                                "y": 186.991,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 2.0,
+                                "w": 76.0,
+                                "x": 340.002,
+                                "y": 245.074,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 6.000000000000028,
+                                "w": 4.0,
+                                "x": 322.194,
+                                "y": 253.542,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "image",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 2.0,
+                                "w": 76.0,
+                                "x": 340.002,
+                                "y": 359.125,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "image",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 8.227999999999952,
+                                "w": 191.084,
+                                "x": 322.194,
+                                "y": 364.857,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "image",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 2.0,
+                                "w": 76.0,
+                                "x": 400.128,
+                                "y": 458.443,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 97.75679248312244,
+                                "w": 213.31257994278621,
+                                "x": 316.8757095336914,
+                                "y": 361.77598173721975,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "image",
+                                "r": null,
+                                "start_index": null
+                            },
+                            {
+                                "h": 375.43196296691895,
+                                "w": 244.0732508120329,
+                                "x": 315.61436860457707,
+                                "y": 84.23972262506899,
+                                "confidence": 0.64,
+                                "end_index": null,
+                                "label": "table",
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "merged_from_pages": null,
+                        "merged_into_page": null,
+                        "parse_concerns": null,
+                        "type": "table"
+                    },
+                    {
+                        "md": "Figure 4: Examples of plausible annotation alternatives for the same page. Criteria in our annotation guideline can resolve cases A to C, while the case D remains ambiguous.",
+                        "value": "Figure 4: Examples of plausible annotation alternatives for the same page. Criteria in our annotation guideline can resolve cases A to C, while the case D remains ambiguous.",
+                        "bbox": [
+                            {
+                                "h": 30.92,
+                                "w": 241.49,
+                                "x": 317.96,
+                                "y": 473.49,
+                                "confidence": 0.98,
+                                "end_index": 172,
+                                "label": "caption",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "were carried out over a timeframe of 12 weeks, after which 8 of the 40 initially allocated annotators did not pass the bar.",
+                        "value": "were carried out over a timeframe of 12 weeks, after which 8 of the 40 initially allocated annotators did not pass the bar.",
+                        "bbox": [
+                            {
+                                "h": 18.96,
+                                "w": 240.15,
+                                "x": 317.62,
+                                "y": 525.5,
+                                "confidence": 0.98,
+                                "end_index": 122,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "**Phase 4: Production annotation.** The previously selected 80K pages were annotated with the defined 11 class labels by 32 annotators. This production phase took around three months to complete. All annotations were created online through CCS, which visualises the programmatic PDF text-cells as an overlay on the page. The page annotation are obtained by drawing rectangular bounding-boxes, as shown in Figure 3. With regard to the annotation practices, we implemented a few constraints and capabilities on the tooling level. First, we only allow non-overlapping, vertically oriented, rectangular boxes. For the large majority of documents, this constraint was sufficient and it speeds up the annotation considerably in comparison with arbitrary segmentation shapes. Second, annotator staff were not able to see each other’s annotations. This was enforced by design to avoid any bias in the annotation, which could skew the numbers of the inter-annotator agreement (see Table 1). We wanted",
+                        "value": "Phase 4: Production annotation. The previously selected 80K pages were annotated with the defined 11 class labels by 32 annotators. This production phase took around three months to complete. All annotations were created online through CCS, which visualises the programmatic PDF text-cells as an overlay on the page. The page annotation are obtained by drawing rectangular bounding-boxes, as shown in Figure 3. With regard to the annotation practices, we implemented a few constraints and capabilities on the tooling level. First, we only allow non-overlapping, vertically oriented, rectangular boxes. For the large majority of documents, this constraint was sufficient and it speeds up the annotation considerably in comparison with arbitrary segmentation shapes. Second, annotator staff were not able to see each other’s annotations. This was enforced by design to avoid any bias in the annotation, which could skew the numbers of the inter-annotator agreement (see Table 1). We wanted",
+                        "bbox": [
+                            {
+                                "h": 163.28,
+                                "w": 243.3,
+                                "x": 316.65,
+                                "y": 546.18,
+                                "confidence": 0.99,
+                                "end_index": 990,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    }
+                ],
+                "page_height": 792.0,
+                "page_number": 1,
+                "page_width": 612.0,
+                "success": true,
+                "revisions": null
+            }
+        ]
+    },
+    "job_metadata": null,
+    "markdown": null,
+    "markdown_full": null,
+    "metadata": null,
+    "raw_parameters": null,
+    "result_content_metadata": null,
+    "text": null,
+    "text_full": null,
+    "debug": null
+}

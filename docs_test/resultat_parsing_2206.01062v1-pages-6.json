@@ -1,0 +1,462 @@
+{
+    "job": {
+        "id": "pjb-cqp1sfwejvq3dk67kn2k09b73rnj",
+        "project_id": "d4523271-f706-4be2-afa8-4d8a929d16f5",
+        "status": "COMPLETED",
+        "created_at": "2026-09-08 20:35:56.004554+00:00",
+        "error_message": null,
+        "name": "2206.01062v1-pages-6.pdf",
+        "tier": "agentic",
+        "updated_at": "2026-09-08 20:36:18.768740+00:00",
+        "usage": null,
+        "user_metadata": null
+    },
+    "forms": null,
+    "images_content_metadata": null,
+    "items": {
+        "pages": [
+            {
+                "items": [
+                    {
+                        "items": [
+                            {
+                                "md": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                                "value": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                                "bbox": [
+                                    {
+                                        "h": 8.18,
+                                        "w": 504.01,
+                                        "x": 53.8,
+                                        "y": 60.13,
+                                        "confidence": 0.94,
+                                        "end_index": 129,
+                                        "label": "header",
+                                        "r": null,
+                                        "start_index": 0
+                                    }
+                                ],
+                                "type": "text"
+                            }
+                        ],
+                        "md": "KDD ’22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+                        "bbox": [
+                            {
+                                "h": 8.18,
+                                "w": 504.01,
+                                "x": 53.8,
+                                "y": 60.13,
+                                "confidence": null,
+                                "end_index": null,
+                                "label": null,
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "header"
+                    },
+                    {
+                        "md": "Table 2: Prediction performance (mAP\\@0.5-0.95) of object detection networks on DocLayNet test set. The MRCNN (Mask R-CNN) and FRCNN (Faster R-CNN) models with ResNet-50 or ResNet-101 backbone were trained based on the network architectures from the *detectron2* model zoo (Mask R-CNN R50, R101-FPN 3x, Faster R-CNN R101-FPN 3x), with default configurations. The YOLO implementation utilized was YOLOv5x6 [13]. All models were initialised using pre-trained weights from the COCO 2017 dataset.",
+                        "value": "Table 2: Prediction performance (mAP@0.5-0.95) of object detection networks on DocLayNet test set. The MRCNN (Mask R-CNN) and FRCNN (Faster R-CNN) models with ResNet-50 or ResNet-101 backbone were trained based on the network architectures from the detectron2 model zoo (Mask R-CNN R50, R101-FPN 3x, Faster R-CNN R101-FPN 3x), with default configurations. The YOLO implementation utilized was YOLOv5x6 [13]. All models were initialised using pre-trained weights from the COCO 2017 dataset.",
+                        "bbox": [
+                            {
+                                "h": 97.01,
+                                "w": 241.91,
+                                "x": 53.01,
+                                "y": 86.45,
+                                "confidence": 0.93,
+                                "end_index": 491,
+                                "label": "caption",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "csv": ",\"human\",\"MRCNN<br/>R50\",\"MRCNN<br/>R101\",\"FRCNN<br/>R101\",\"YOLO<br/>v5x6\"\n\"Caption\",\"84-89\",\"68.4\",\"71.5\",\"70.1\",\"77.7\"\n\"Footnote\",\"83-91\",\"70.9\",\"71.8\",\"73.7\",\"77.2\"\n\"Formula\",\"83-85\",\"60.1\",\"63.4\",\"63.5\",\"66.2\"\n\"List-item\",\"87-88\",\"81.2\",\"80.8\",\"81.0\",\"86.2\"\n\"Page-footer\",\"93-94\",\"61.6\",\"59.3\",\"58.9\",\"61.1\"\n\"Page-header\",\"85-89\",\"71.9\",\"70.0\",\"72.0\",\"67.9\"\n\"Picture\",\"69-71\",\"71.7\",\"72.7\",\"72.0\",\"77.1\"\n\"Section-header\",\"83-84\",\"67.6\",\"69.3\",\"68.4\",\"74.6\"\n\"Table\",\"77-81\",\"82.2\",\"82.9\",\"82.2\",\"86.3\"\n\"Text\",\"84-86\",\"84.6\",\"85.8\",\"85.4\",\"88.1\"\n\"Title\",\"60-72\",\"76.7\",\"80.4\",\"79.9\",\"82.7\"\n\"All\",\"82-83\",\"72.4\",\"73.5\",\"73.4\",\"76.8\"",
+                        "html": "<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th rowspan=\"2\">human</th>\n        <th colspan=\"2\">MRCNN</th>\n        <th>FRCNN</th>\n        <th>YOLO</th>\n    </tr>\n    <tr>\n        <th> </th>\n        <th>R50</th>\n        <th>R101</th>\n        <th>R101</th>\n        <th>v5x6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Caption</td>\n        <td>84-89</td>\n        <td>68.4</td>\n        <td>71.5</td>\n        <td>70.1</td>\n        <td>77.7</td>\n    </tr>\n    <tr>\n        <td>Footnote</td>\n        <td>83-91</td>\n        <td>70.9</td>\n        <td>71.8</td>\n        <td>73.7</td>\n        <td>77.2</td>\n    </tr>\n    <tr>\n        <td>Formula</td>\n        <td>83-85</td>\n        <td>60.1</td>\n        <td>63.4</td>\n        <td>63.5</td>\n        <td>66.2</td>\n    </tr>\n    <tr>\n        <td>List-item</td>\n        <td>87-88</td>\n        <td>81.2</td>\n        <td>80.8</td>\n        <td>81.0</td>\n        <td>86.2</td>\n    </tr>\n    <tr>\n        <td>Page-footer</td>\n        <td>93-94</td>\n        <td>61.6</td>\n        <td>59.3</td>\n        <td>58.9</td>\n        <td>61.1</td>\n    </tr>\n    <tr>\n        <td>Page-header</td>\n        <td>85-89</td>\n        <td>71.9</td>\n        <td>70.0</td>\n        <td>72.0</td>\n        <td>67.9</td>\n    </tr>\n    <tr>\n        <td>Picture</td>\n        <td>69-71</td>\n        <td>71.7</td>\n        <td>72.7</td>\n        <td>72.0</td>\n        <td>77.1</td>\n    </tr>\n    <tr>\n        <td>Section-header</td>\n        <td>83-84</td>\n        <td>67.6</td>\n        <td>69.3</td>\n        <td>68.4</td>\n        <td>74.6</td>\n    </tr>\n    <tr>\n        <td>Table</td>\n        <td>77-81</td>\n        <td>82.2</td>\n        <td>82.9</td>\n        <td>82.2</td>\n        <td>86.3</td>\n    </tr>\n    <tr>\n        <td>Text</td>\n        <td>84-86</td>\n        <td>84.6</td>\n        <td>85.8</td>\n        <td>85.4</td>\n        <td>88.1</td>\n    </tr>\n    <tr>\n        <td>Title</td>\n        <td>60-72</td>\n        <td>76.7</td>\n        <td>80.4</td>\n        <td>79.9</td>\n        <td>82.7</td>\n    </tr>\n    <tr>\n        <td>All</td>\n        <td>82-83</td>\n        <td>72.4</td>\n        <td>73.5</td>\n        <td>73.4</td>\n        <td>76.8</td>\n    </tr>\n  </tbody>\n</table>",
+                        "md": "|                | human | MRCNN<br/>R50 | MRCNN<br/>R101 | FRCNN<br/>R101 | YOLO<br/>v5x6 |\n| -------------- | ----- | ------------- | -------------- | -------------- | ------------- |\n| Caption        | 84-89 | 68.4          | 71.5           | 70.1           | 77.7          |\n| Footnote       | 83-91 | 70.9          | 71.8           | 73.7           | 77.2          |\n| Formula        | 83-85 | 60.1          | 63.4           | 63.5           | 66.2          |\n| List-item      | 87-88 | 81.2          | 80.8           | 81.0           | 86.2          |\n| Page-footer    | 93-94 | 61.6          | 59.3           | 58.9           | 61.1          |\n| Page-header    | 85-89 | 71.9          | 70.0           | 72.0           | 67.9          |\n| Picture        | 69-71 | 71.7          | 72.7           | 72.0           | 77.1          |\n| Section-header | 83-84 | 67.6          | 69.3           | 68.4           | 74.6          |\n| Table          | 77-81 | 82.2          | 82.9           | 82.2           | 86.3          |\n| Text           | 84-86 | 84.6          | 85.8           | 85.4           | 88.1          |\n| Title          | 60-72 | 76.7          | 80.4           | 79.9           | 82.7          |\n| All            | 82-83 | 72.4          | 73.5           | 73.4           | 76.8          |",
+                        "rows": [
+                            [
+                                "",
+                                "human",
+                                "MRCNN<br/>R50",
+                                "MRCNN<br/>R101",
+                                "FRCNN<br/>R101",
+                                "YOLO<br/>v5x6"
+                            ],
+                            [
+                                "Caption",
+                                "84-89",
+                                "68.4",
+                                "71.5",
+                                "70.1",
+                                "77.7"
+                            ],
+                            [
+                                "Footnote",
+                                "83-91",
+                                "70.9",
+                                "71.8",
+                                "73.7",
+                                "77.2"
+                            ],
+                            [
+                                "Formula",
+                                "83-85",
+                                "60.1",
+                                "63.4",
+                                "63.5",
+                                "66.2"
+                            ],
+                            [
+                                "List-item",
+                                "87-88",
+                                "81.2",
+                                "80.8",
+                                "81.0",
+                                "86.2"
+                            ],
+                            [
+                                "Page-footer",
+                                "93-94",
+                                "61.6",
+                                "59.3",
+                                "58.9",
+                                "61.1"
+                            ],
+                            [
+                                "Page-header",
+                                "85-89",
+                                "71.9",
+                                "70.0",
+                                "72.0",
+                                "67.9"
+                            ],
+                            [
+                                "Picture",
+                                "69-71",
+                                "71.7",
+                                "72.7",
+                                "72.0",
+                                "77.1"
+                            ],
+                            [
+                                "Section-header",
+                                "83-84",
+                                "67.6",
+                                "69.3",
+                                "68.4",
+                                "74.6"
+                            ],
+                            [
+                                "Table",
+                                "77-81",
+                                "82.2",
+                                "82.9",
+                                "82.2",
+                                "86.3"
+                            ],
+                            [
+                                "Text",
+                                "84-86",
+                                "84.6",
+                                "85.8",
+                                "85.4",
+                                "88.1"
+                            ],
+                            [
+                                "Title",
+                                "60-72",
+                                "76.7",
+                                "80.4",
+                                "79.9",
+                                "82.7"
+                            ],
+                            [
+                                "All",
+                                "82-83",
+                                "72.4",
+                                "73.5",
+                                "73.4",
+                                "76.8"
+                            ]
+                        ],
+                        "bbox": [
+                            {
+                                "h": 156.18,
+                                "w": 223.65,
+                                "x": 62.15,
+                                "y": 195.21,
+                                "confidence": 0.95,
+                                "end_index": 1300,
+                                "label": "table",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "merged_from_pages": null,
+                        "merged_into_page": null,
+                        "parse_concerns": [
+                            {
+                                "details": "2 tables on page",
+                                "type": "multi_table_page"
+                            }
+                        ],
+                        "type": "table"
+                    },
+                    {
+                        "md": "to avoid this at any cost in order to have clear, unbiased baseline numbers for human document-layout annotation. Third, we introduced the feature of *snapping* boxes around text segments to obtain a pixel-accurate annotation and again reduce time and effort. The CCS annotation tool automatically shrinks every user-drawn box to the minimum bounding-box around the enclosed text-cells for all purely text-based segments, which excludes only *Table* and *Picture*. For the latter, we instructed annotation staff to minimise inclusion of surrounding whitespace while including all graphical lines. A downside of snapping boxes to enclosed text cells is that some wrongly parsed PDF pages cannot be annotated correctly and need to be skipped. Fourth, we established a way to flag pages as *rejected* for cases where no valid annotation according to the label guidelines could be achieved. Example cases for this would be PDF pages that render incorrectly or contain layouts that are impossible to capture with non-overlapping rectangles. Such rejected pages are not contained in the final dataset. With all these measures in place, experienced annotation staff managed to annotate a single page in a typical timeframe of 20s to 60s, depending on its complexity.",
+                        "value": "to avoid this at any cost in order to have clear, unbiased baseline numbers for human document-layout annotation. Third, we introduced the feature of snapping boxes around text segments to obtain a pixel-accurate annotation and again reduce time and effort. The CCS annotation tool automatically shrinks every user-drawn box to the minimum bounding-box around the enclosed text-cells for all purely text-based segments, which excludes only Table and Picture. For the latter, we instructed annotation staff to minimise inclusion of surrounding whitespace while including all graphical lines. A downside of snapping boxes to enclosed text cells is that some wrongly parsed PDF pages cannot be annotated correctly and need to be skipped. Fourth, we established a way to flag pages as rejected for cases where no valid annotation according to the label guidelines could be achieved. Example cases for this would be PDF pages that render incorrectly or contain layouts that are impossible to capture with non-overlapping rectangles. Such rejected pages are not contained in the final dataset. With all these measures in place, experienced annotation staff managed to annotate a single page in a typical timeframe of 20s to 60s, depending on its complexity.",
+                        "bbox": [
+                            {
+                                "h": 206.96,
+                                "w": 242.57,
+                                "x": 52.87,
+                                "y": 369.99,
+                                "confidence": 1.0,
+                                "end_index": 1258,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 14.77,
+                                "w": 241.53,
+                                "x": 52.57,
+                                "y": 364.16,
+                                "confidence": 1.0,
+                                "end_index": 66,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "level": 2,
+                        "md": "## 5 EXPERIMENTS",
+                        "value": "5 EXPERIMENTS",
+                        "bbox": [
+                            {
+                                "h": 8.54,
+                                "w": 93.8,
+                                "x": 53.72,
+                                "y": 588.06,
+                                "confidence": 0.98,
+                                "end_index": 15,
+                                "label": "paragraph_title",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "heading"
+                    },
+                    {
+                        "md": "The primary goal of DocLayNet is to obtain high-quality ML models capable of accurate document-layout analysis on a wide variety of challenging layouts. As discussed in Section 2, object detection models are currently the easiest to use, due to the standardisation of ground-truth data in COCO format [16] and the availability of general frameworks such as detectron2 [17]. Furthermore, baseline numbers in PubLayNet and DocBank were obtained using standard object detection models such as Mask R-CNN and Faster R-CNN. As such, we will relate to these object detection methods in this",
+                        "value": "The primary goal of DocLayNet is to obtain high-quality ML models capable of accurate document-layout analysis on a wide variety of challenging layouts. As discussed in Section 2, object detection models are currently the easiest to use, due to the standardisation of ground-truth data in COCO format [16] and the availability of general frameworks such as detectron2 [17]. Furthermore, baseline numbers in PubLayNet and DocBank were obtained using standard object detection models such as Mask R-CNN and Faster R-CNN. As such, we will relate to these object detection methods in this",
+                        "bbox": [
+                            {
+                                "h": 97.07,
+                                "w": 242.01,
+                                "x": 53.05,
+                                "y": 612.56,
+                                "confidence": 1.0,
+                                "end_index": 583,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 33.828381147540995,
+                                "w": 240.83964691003266,
+                                "x": 52.5721537283513,
+                                "y": 578.971475409836,
+                                "confidence": 1.0,
+                                "end_index": null,
+                                "label": "text",
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "csv": "\"% of DocLayNet training set\",\"mAP 0.50:0.95\"\n\"0\",\"50\"\n\"20\",\"58\"\n\"40\",\"63.5\"\n\"60\",\"66.5\"\n\"80\",\"68\"\n\"100\",\"68.5\"",
+                        "html": "<table>\n  <thead>\n    <tr>\n        <th>% of DocLayNet training set</th>\n        <th>mAP 0.50:0.95</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>0</td>\n        <td>50</td>\n    </tr>\n    <tr>\n        <td>20</td>\n        <td>58</td>\n    </tr>\n    <tr>\n        <td>40</td>\n        <td>63.5</td>\n    </tr>\n    <tr>\n        <td>60</td>\n        <td>66.5</td>\n    </tr>\n    <tr>\n        <td>80</td>\n        <td>68</td>\n    </tr>\n    <tr>\n        <td>100</td>\n        <td>68.5</td>\n    </tr>\n  </tbody>\n</table>",
+                        "md": "| % of DocLayNet training set | mAP 0.50:0.95 |\n| --------------------------- | ------------- |\n| 0                           | 50            |\n| 20                          | 58            |\n| 40                          | 63.5          |\n| 60                          | 66.5          |\n| 80                          | 68            |\n| 100                         | 68.5          |",
+                        "rows": [
+                            [
+                                "% of DocLayNet training set",
+                                "mAP 0.50:0.95"
+                            ],
+                            [
+                                "0",
+                                "50"
+                            ],
+                            [
+                                "20",
+                                "58"
+                            ],
+                            [
+                                "40",
+                                "63.5"
+                            ],
+                            [
+                                "60",
+                                "66.5"
+                            ],
+                            [
+                                "80",
+                                "68"
+                            ],
+                            [
+                                "100",
+                                "68.5"
+                            ]
+                        ],
+                        "bbox": [
+                            {
+                                "h": 171.46,
+                                "w": 233.61,
+                                "x": 321.03,
+                                "y": 89.61,
+                                "confidence": 0.99,
+                                "end_index": 382,
+                                "label": "chart",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "merged_from_pages": null,
+                        "merged_into_page": null,
+                        "parse_concerns": [
+                            {
+                                "details": "2 tables on page",
+                                "type": "multi_table_page"
+                            }
+                        ],
+                        "type": "table"
+                    },
+                    {
+                        "md": "Figure 5: Prediction performance (mAP\\@0.5-0.95) of a Mask R-CNN network with ResNet50 backbone trained on increasing fractions of the DocLayNet dataset. The learning curve flattens around the 80% mark, indicating that increasing the size of the DocLayNet dataset with similar data will not yield significantly better predictions.",
+                        "value": "Figure 5: Prediction performance (mAP@0.5-0.95) of a Mask R-CNN network with ResNet50 backbone trained on increasing fractions of the DocLayNet dataset. The learning curve flattens around the 80% mark, indicating that increasing the size of the DocLayNet dataset with similar data will not yield significantly better predictions.",
+                        "bbox": [
+                            {
+                                "h": 64.5,
+                                "w": 242.59,
+                                "x": 317.06,
+                                "y": 278.17,
+                                "confidence": 0.99,
+                                "end_index": 329,
+                                "label": "caption",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "paper and leave the detailed evaluation of more recent methods mentioned in Section 2 for future work.",
+                        "value": "paper and leave the detailed evaluation of more recent methods mentioned in Section 2 for future work.",
+                        "bbox": [
+                            {
+                                "h": 25.28,
+                                "w": 240.84,
+                                "x": 317.46,
+                                "y": 377.69,
+                                "confidence": 1.0,
+                                "end_index": 92,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "md": "In this section, we will present several aspects related to the performance of object detection models on DocLayNet. Similarly as in PubLayNet, we will evaluate the quality of their predictions using mean average precision (mAP) with 10 overlaps that range from 0.5 to 0.95 in steps of 0.05 (mAP\\@0.5-0.95). These scores are computed by leveraging the evaluation code provided by the COCO API [16].",
+                        "value": "In this section, we will present several aspects related to the performance of object detection models on DocLayNet. Similarly as in PubLayNet, we will evaluate the quality of their predictions using mean average precision (mAP) with 10 overlaps that range from 0.5 to 0.95 in steps of 0.05 (mAP@0.5-0.95). These scores are computed by leveraging the evaluation code provided by the COCO API [16].",
+                        "bbox": [
+                            {
+                                "h": 75.25,
+                                "w": 241.39,
+                                "x": 317.11,
+                                "y": 405.08,
+                                "confidence": 0.99,
+                                "end_index": 397,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            }
+                        ],
+                        "type": "text"
+                    },
+                    {
+                        "level": 3,
+                        "md": "### Baselines for Object Detection",
+                        "value": "Baselines for Object Detection",
+                        "bbox": [
+                            {
+                                "h": 17.5,
+                                "w": 149.61,
+                                "x": 317.46,
+                                "y": 489.33,
+                                "confidence": 1.0,
+                                "end_index": 33,
+                                "label": "paragraph_title",
+                                "r": null,
+                                "start_index": 4
+                            }
+                        ],
+                        "type": "heading"
+                    },
+                    {
+                        "md": "In Table 2, we present baseline experiments (given in mAP) on Mask R-CNN [12], Faster R-CNN [11], and YOLOv5 [13]. Both training and evaluation were performed on RGB images with dimensions of 1025 × 1025 pixels. For training, we only used one annotation in case of redundantly annotated pages. As one can observe, the variation in mAP between the models is rather low, but overall between 6 and 10% lower than the mAP computed from the pairwise human annotations on triple-annotated pages. This gives a good indication that the DocLayNet dataset poses a worthwhile challenge for the research community to close the gap between human recognition and ML approaches. It is interesting to see that Mask R-CNN and Faster R-CNN produce very comparable mAP scores, indicating that pixel-based image segmentation derived from bounding-boxes does not help to obtain better predictions. On the other hand, the more recent Yolov5x model does very well and even out-performs humans on selected labels such as *Text*, *Table* and *Picture*. This is not entirely surprising, as *Text*, *Table* and *Picture* are abundant and the most visually distinctive in a document.",
+                        "value": "In Table 2, we present baseline experiments (given in mAP) on Mask R-CNN [12], Faster R-CNN [11], and YOLOv5 [13]. Both training and evaluation were performed on RGB images with dimensions of 1025 × 1025 pixels. For training, we only used one annotation in case of redundantly annotated pages. As one can observe, the variation in mAP between the models is rather low, but overall between 6 and 10% lower than the mAP computed from the pairwise human annotations on triple-annotated pages. This gives a good indication that the DocLayNet dataset poses a worthwhile challenge for the research community to close the gap between human recognition and ML approaches. It is interesting to see that Mask R-CNN and Faster R-CNN produce very comparable mAP scores, indicating that pixel-based image segmentation derived from bounding-boxes does not help to obtain better predictions. On the other hand, the more recent Yolov5x model does very well and even out-performs humans on selected labels such as Text, Table and Picture. This is not entirely surprising, as Text, Table and Picture are abundant and the most visually distinctive in a document.",
+                        "bbox": [
+                            {
+                                "h": 195.98,
+                                "w": 242.05,
+                                "x": 316.86,
+                                "y": 510.85,
+                                "confidence": 1.0,
+                                "end_index": 1154,
+                                "label": "text",
+                                "r": null,
+                                "start_index": 0
+                            },
+                            {
+                                "h": 23.003299180327815,
+                                "w": 242.21391023048938,
+                                "x": 316.7742770861475,
+                                "y": 489.3262653688524,
+                                "confidence": 1.0,
+                                "end_index": null,
+                                "label": "text",
+                                "r": null,
+                                "start_index": null
+                            }
+                        ],
+                        "type": "text"
+                    }
+                ],
+                "page_height": 792.0,
+                "page_number": 1,
+                "page_width": 612.0,
+                "success": true,
+                "revisions": null
+            }
+        ]
+    },
+    "job_metadata": null,
+    "markdown": null,
+    "markdown_full": null,
+    "metadata": null,
+    "raw_parameters": null,
+    "result_content_metadata": null,
+    "text": null,
+    "text_full": null,
+    "debug": null
+}
