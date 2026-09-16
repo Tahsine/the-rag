@@ -12,3 +12,4 @@ pillow
 google-genai
 sqlite-vec
 lancedb
+pandas
