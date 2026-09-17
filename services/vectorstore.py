@@ -43,7 +43,11 @@ def insert_chunks(chunks: list[Chunk], vectors: list[list[float]]) -> int:
 
 
 def hybrid_search(query_vector: list[float], query_text: str, limit: int = 3) -> list[dict]:
-    table: Table = db.open_table(TABLE_NAME)
+    try:
+        table: Table = db.open_table(TABLE_NAME)
+    except Exception:
+        # Table not yet created -> no results (standalone before indexing)
+        return []
     results: list[dict] = (
         table.search(query_type="hybrid")
         .vector(query_vector)

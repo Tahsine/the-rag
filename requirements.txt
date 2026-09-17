@@ -1,7 +1,9 @@
 llama-cloud>=2.8
 liteparse
-langchain
-langgraph
+langchain>=1.4.0
+langgraph>=1.2.11
+langchain-ollama>=1.1.0
+langchain-core>=1.6.2
 fastapi
 uvicorn
 python-multipart
@@ -13,3 +15,4 @@ google-genai
 sqlite-vec
 lancedb
 pandas
+ollama>=0.6.2
