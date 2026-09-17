@@ -39,7 +39,7 @@ class CitationValidationMiddleware(AgentMiddleware):
     state_schema = CitationState
 
     def wrap_tool_call(self, request, handler):
-        """Intercepte l'exécution de retrieve pour mémoriser les IDs."""
+        """Intercepte l'exécution de retrieve pour mémoriser les IDs (sync)."""
         result = handler(request)
         if request.tool_call.get("name") == "retrieve":
             tool_content = ""
@@ -57,6 +57,30 @@ class CitationValidationMiddleware(AgentMiddleware):
                 }
                 return result
         return result
+
+    async def awrap_tool_call(self, request, handler):
+        """Async version for astream/astream_events (required in async context)."""
+        result = await handler(request)
+        if request.tool_call.get("name") == "retrieve":
+            tool_content = ""
+            if isinstance(result, ToolMessage):
+                tool_content = str(result.content)
+            elif isinstance(result, dict):
+                tool_content = str(result.get("content", ""))
+            else:
+                tool_content = str(result)
+            ids = _parse_retrieved_ids(tool_content)
+            if isinstance(result, ToolMessage):
+                result.additional_kwargs = {
+                    **getattr(result, "additional_kwargs", {}),
+                    "retrieved_ids": list(ids),
+                }
+                return result
+        return result
+
+    async def aafter_model(self, state, runtime):
+        # Delegate to sync implementation for async path
+        return self.after_model(state, runtime)
 
     def after_model(self, state, runtime):
         """Filtre cited invalides après génération de RagAnswer.

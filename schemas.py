@@ -1,4 +1,6 @@
-from pydantic import BaseModel
+from typing import Literal
+
+from pydantic import BaseModel, Field
 
 class BBox(BaseModel):
     h: float
@@ -20,3 +22,43 @@ class Chunk(BaseModel):
     page: int
     text: str
     sources: list[Source]
+
+
+# --- V0 API DTOs (etape 5) ---
+class DocumentStatus(BaseModel):
+    doc_id: str
+    filename: str
+    status: Literal["indexing", "ready", "error"]
+    pages: int = 0
+    chunks: int = 0
+    error: str | None = None
+
+
+class DocumentUploadResponse(BaseModel):
+    doc_id: str
+    filename: str
+    pages: int
+    chunks: int
+    status: str = "ready"
+
+
+class QueryRequest(BaseModel):
+    question: str = Field(..., min_length=1, max_length=2000)
+    doc_id: str | None = None  # mono-PDF V0: recommandé
+    session_id: str = Field(..., min_length=1, max_length=128, description="Frontend UUID, part of thread_id")
+    top_k: int = Field(default=6, ge=1, le=12)
+
+
+class Locator(BaseModel):
+    type: Literal["pdf"] = "pdf"
+    doc_id: str
+    page: int
+    bbox: list[float] | None = None  # [x,y,w,h] or [x0,y0,x1,y1] depending on source
+    textAnchor: str | None = None
+
+
+class Citation(BaseModel):
+    citationId: str
+    locator: Locator
+    snippet: str
+    score: float | None = None
