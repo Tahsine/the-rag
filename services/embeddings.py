@@ -6,10 +6,18 @@ from config import EMBEDDING_MODEL, EMBEDDING_DIM
 
 load_dotenv()
 
-client: genai.Client = genai.Client()
+_client: genai.Client | None = None
+
+
+def _get_client() -> genai.Client:
+    global _client
+    if _client is None:
+        _client = genai.Client()
+    return _client
+
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
-    response = client.models.embed_content(
+    response = _get_client().models.embed_content(
         model=EMBEDDING_MODEL,
         contents=texts,
         config=types.EmbedContentConfig(

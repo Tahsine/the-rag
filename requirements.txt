@@ -1,5 +1,4 @@
 llama-cloud>=2.8
-liteparse
 langchain>=1.4.0
 langgraph>=1.2.11
 langchain-ollama>=1.1.0
@@ -8,11 +7,11 @@ fastapi
 uvicorn
 python-multipart
 python-dotenv
-pypdf
 pymupdf
 pillow
 google-genai
-sqlite-vec
 lancedb
 pandas
 ollama>=0.6.2
+typer
+rich

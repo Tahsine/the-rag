@@ -3,88 +3,28 @@ import json
 import time
 from typing import AsyncIterable
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from fastapi.sse import EventSourceResponse, ServerSentEvent
-from langchain_core.messages import AIMessage, ToolMessage
 
-from schemas import Citation, Locator, QueryRequest
+from schemas import QueryRequest
 from services.agent.core import get_agent
 from services.agent.prompt import RagAnswer
-from services.vectorstore import db, TABLE_NAME
+from services.citations import build_citations
 
 router = APIRouter()
 
 
 def _thread_id(req: QueryRequest) -> str:
-    # mono-PDF V0: doc_id:session_id si doc_id fourni, sinon session_id seul
+    # doc_id optionnel: doc_id:session_id si fourni, sinon session_id seul (corpus global)
     if req.doc_id:
         return f"{req.doc_id}:{req.session_id}"
     return req.session_id
 
 
-def _build_citations(structured: RagAnswer | None, thread_id: str, doc_id: str | None) -> list[Citation]:
-    if not structured or not structured.cited:
-        return []
-    # On récupère les sources depuis LanceDB pour les ids cités
-    # hybrid_search a déjà stocké sources JSON; on les relit par id
-    try:
-        table = db.open_table(TABLE_NAME)
-        # LanceDB filter: id IN (...)
-        # Fallback: to_pandas puis filter si filter non supporté
-        try:
-            df = table.to_pandas()
-        except Exception:
-            df = None
-        id_to_row = {}
-        if df is not None and not df.empty:
-            for _, row in df.iterrows():
-                id_to_row[int(row["id"])] = row
-        citations: list[Citation] = []
-        for cid in structured.cited:
-            row = id_to_row.get(int(cid))
-            if row is None:
-                continue
-            text = str(row.get("text", ""))[:500]
-            page = int(row.get("page", 1))
-            sources_raw = row.get("sources", "[]")
-            bbox = None
-            try:
-                import json as _json
-
-                sources = _json.loads(sources_raw) if isinstance(sources_raw, str) else sources_raw
-                if sources and isinstance(sources, list) and sources[0].get("bbox"):
-                    b = sources[0]["bbox"][0]
-                    # BBox {x,y,w,h}
-                    bbox = [float(b.get("x", 0)), float(b.get("y", 0)), float(b.get("w", 0)), float(b.get("h", 0))]
-            except Exception:
-                bbox = None
-            locator = Locator(
-                type="pdf",
-                doc_id=doc_id or str(row.get("doc_id", "")),
-                page=page,
-                bbox=bbox,
-                textAnchor=text[:80],
-            )
-            citations.append(
-                Citation(
-                    citationId=f"c{cid}",
-                    locator=locator,
-                    snippet=text,
-                    score=None,
-                )
-            )
-        return citations
-    except Exception:
-        return []
-
-
 @router.post("", response_class=EventSourceResponse)
 async def query_sse(req: QueryRequest) -> AsyncIterable[ServerSentEvent]:
-    if not req.question.strip():
-        raise HTTPException(status_code=400, detail="question vide")
-
     thread_id = _thread_id(req)
-    config = {"configurable": {"thread_id": thread_id}}
+    config = {"configurable": {"thread_id": thread_id, "doc_id": req.doc_id}}
     agent = get_agent()
     start = time.time()
 
@@ -165,7 +105,7 @@ async def query_sse(req: QueryRequest) -> AsyncIterable[ServerSentEvent]:
     except Exception:
         structured = None
 
-    citations = _build_citations(structured, thread_id, req.doc_id)
+    citations = build_citations(structured, req.doc_id)
 
     if structured is None and full_answer:
         structured = RagAnswer(answer=full_answer, cited=[], confidence="low", refusal=None)

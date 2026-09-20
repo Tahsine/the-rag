@@ -97,7 +97,7 @@ def main():
         retrieved = set()
         for m in r1.get("messages", []):
             content = getattr(m, "content", "") or ""
-            if isinstance(content, str) and "[" in content and "(p." in content:
+            if isinstance(content, str) and "[" in content and ("(doc:" in content or "(p." in content):
                 retrieved.update(_parse_ids(content))
         if s1.cited:
             invalid = [c for c in s1.cited if c not in retrieved]

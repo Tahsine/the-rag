@@ -1,13 +1,17 @@
+import json
+from pathlib import Path
+
 import pymupdf as fitz
 from PIL import Image, ImageDraw
-import json
 
-with open("/home/borrelle/Working/Github Projects/folio/backend/docs_test/resultat_parsing_2206.01062v1-pages-6.json") as f:
+DOCS_DIR = Path(__file__).parent / "docs_test"
+
+with open(DOCS_DIR / "resultat_parsing_2206.01062v1-pages-6.json") as f:
     data = json.load(f)
 
 items = data["items"]["pages"][0]["items"]
 
-doc = fitz.open("/home/borrelle/Working/Github Projects/folio/backend/docs_test/2206.01062v1-pages-6.pdf")
+doc = fitz.open(DOCS_DIR / "2206.01062v1-pages-6.pdf")
 page = doc[0]
 zoom = 2
 pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom))

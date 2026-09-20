@@ -43,8 +43,8 @@ class DocumentUploadResponse(BaseModel):
 
 
 class QueryRequest(BaseModel):
-    question: str = Field(..., min_length=1, max_length=2000)
-    doc_id: str | None = None  # mono-PDF V0: recommandé
+    question: str = Field(..., min_length=1, max_length=2000, pattern=r"\S")
+    doc_id: str | None = None  # optionnel: filtre la recherche ; absent = corpus global
     session_id: str = Field(..., min_length=1, max_length=128, description="Frontend UUID, part of thread_id")
     top_k: int = Field(default=6, ge=1, le=12)
 

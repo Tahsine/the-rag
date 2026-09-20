@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from services.chunking import build_chunks
 from services.embeddings import embed_texts
@@ -9,8 +10,10 @@ DOC_ID: str = "test-doclaynet-kdd22"
 seen_texts: set[str] = set()
 all_chunks: list[Chunk] = []
 
+DOCS_DIR = Path(__file__).parent / "docs_test"
+
 for real_page_number in [4, 5, 6]:
-    with open(f"/home/borrelle/Working/Github Projects/folio/backend/docs_test/resultat_parsing_2206.01062v1-pages-{real_page_number}.json") as f:
+    with open(DOCS_DIR / f"resultat_parsing_2206.01062v1-pages-{real_page_number}.json") as f:
         data = json.load(f)
     for page in data["items"]["pages"]:
         chunks: list[Chunk] = build_chunks(

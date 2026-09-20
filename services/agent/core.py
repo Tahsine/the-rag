@@ -90,17 +90,4 @@ def get_agent():
     return _agent
 
 
-# alias for convenience in tests
-agent = None
-
-def _lazy_agent():
-    global agent
-    if agent is None:
-        agent = get_agent()
-    return agent
-
-# expose for import: from services.agent.core import agent
-# on ne l'instancie pas à l'import pour éviter d'exiger OLLAMA_API_KEY au import
-# l'appelant doit faire get_agent() ou _lazy_agent()
-
-__all__ = ["get_agent", "get_checkpointer", "RagAnswer", "SYSTEM_PROMPT", "retrieve"]
+__all__ = ["get_agent", "get_checkpointer"]
