@@ -1,6 +1,7 @@
 import asyncio
 import json
 import time
+import uuid
 from typing import AsyncIterable
 
 from fastapi import APIRouter
@@ -10,6 +11,7 @@ from schemas import QueryRequest
 from services.agent.core import get_agent
 from services.agent.prompt import RagAnswer
 from services.citations import build_citations
+from services.citation_images import save_citation_images
 
 router = APIRouter()
 
@@ -114,6 +116,16 @@ async def query_sse(req: QueryRequest) -> AsyncIterable[ServerSentEvent]:
         event="citations",
         data={"citations": [c.model_dump() for c in citations]},
     )
+
+    if req.save_citation_images:
+        image_result = save_citation_images(structured, req.doc_id, answer_id=uuid.uuid4().hex[:10])
+        yield ServerSentEvent(
+            event="images",
+            data={
+                "images": [image.model_dump() for image in image_result.images],
+                "warnings": image_result.warnings,
+            },
+        )
 
     latency = int((time.time() - start) * 1000)
     yield ServerSentEvent(

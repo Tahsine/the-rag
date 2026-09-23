@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from routers.documents import router as documents_router
 from routers.query import router as query_router
 
-app = FastAPI(title="Folio V0", version="0.5.0")
+app = FastAPI(title="JustRag V0", version="0.5.0")
 
 # CORS pour Vite dev server (frontend)
 app.add_middleware(
@@ -21,7 +21,7 @@ app.include_router(query_router, prefix="/query", tags=["query"])
 
 @app.get("/")
 def root():
-    return {"message": "Hello from Folio", "version": "0.5.0"}
+    return {"message": "Hello from JustRag", "version": "0.5.0"}
 
 
 @app.get("/health")

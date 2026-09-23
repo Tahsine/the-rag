@@ -5,13 +5,14 @@ from typing import Callable
 
 from schemas import Chunk
 from services.chunking import build_chunks
+from services.document_store import store_source_pdf
 from services.embeddings import embed_texts
 from services.parsing import parse_pdf
 from services.vectorstore import insert_chunks
 
 
 class PipelineError(Exception):
-    """Erreur du pipeline d'indexation (côté Folio)."""
+    """Erreur du pipeline d'indexation (côté JustRag)."""
 
 
 class UpstreamError(PipelineError):
@@ -39,16 +40,25 @@ def index_pdf(
     file_path: str | Path,
     doc_id: str | None = None,
     on_stage: Callable[[str], None] | None = None,
+    store_source: bool = True,
 ) -> IndexResult:
     """Pipeline complet: LlamaParse -> chunks -> embeddings -> LanceDB.
 
     on_stage: callback optionnel (nom d'etape) pour progress UI (CLI).
+    store_source: copie le PDF source pour la génération d'images de citations.
     """
     doc_id = doc_id or str(uuid.uuid4())
 
     def stage(name: str) -> None:
         if on_stage:
             on_stage(name)
+
+    if store_source:
+        stage("store_source")
+        try:
+            store_source_pdf(file_path, doc_id)
+        except Exception as e:
+            raise PipelineError(f"Stockage du PDF source: {e}") from e
 
     stage("parse")
     try:

@@ -1,3 +1,5 @@
+import os
+
 from llama_cloud import LlamaCloud
 from dotenv import load_dotenv
 
@@ -9,6 +11,10 @@ _client: LlamaCloud | None = None
 def _get_client() -> LlamaCloud:
     global _client
     if _client is None:
+        if not os.getenv("LLAMA_CLOUD_API_KEY"):
+            raise RuntimeError(
+                "LLAMA_CLOUD_API_KEY manquante. Ajoutez-la dans backend/.env ou dans l'environnement."
+            )
         _client = LlamaCloud()
     return _client
 

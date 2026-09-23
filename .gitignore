@@ -2,3 +2,7 @@ __pycache__/
 .env*
 .venv/
 venv/
+*.egg-info/
+stored_pdfs/
+citation_images/
+just_rag_lancedb/

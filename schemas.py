@@ -47,6 +47,7 @@ class QueryRequest(BaseModel):
     doc_id: str | None = None  # optionnel: filtre la recherche ; absent = corpus global
     session_id: str = Field(..., min_length=1, max_length=128, description="Frontend UUID, part of thread_id")
     top_k: int = Field(default=6, ge=1, le=12)
+    save_citation_images: bool = Field(default=True, description="Sauvegarde un PNG par page citée avec les bboxes")
 
 
 class Locator(BaseModel):
@@ -62,3 +63,10 @@ class Citation(BaseModel):
     locator: Locator
     snippet: str
     score: float | None = None
+
+
+class CitationImage(BaseModel):
+    doc_id: str
+    page: int
+    path: str
+    bbox_count: int

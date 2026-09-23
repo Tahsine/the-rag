@@ -137,9 +137,6 @@ class CitationValidationMiddleware(AgentMiddleware):
                 elif isinstance(msg.content, str) and "[" in msg.content:
                     retrieved_ids.update(_parse_retrieved_ids(msg.content))
 
-        if not retrieved_ids:
-            return None
-
         try:
             cited = list(getattr(structured, "cited", []))
         except Exception:

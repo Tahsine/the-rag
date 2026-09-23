@@ -1,3 +1,5 @@
+import os
+
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -12,6 +14,10 @@ _client: genai.Client | None = None
 def _get_client() -> genai.Client:
     global _client
     if _client is None:
+        if not os.getenv("GOOGLE_API_KEY"):
+            raise RuntimeError(
+                "GOOGLE_API_KEY manquante. Ajoutez-la dans backend/.env ou dans l'environnement."
+            )
         _client = genai.Client()
     return _client
 

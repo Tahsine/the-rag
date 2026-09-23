@@ -33,6 +33,16 @@ def _build_llm() -> ChatOllama:
         or os.environ.get("LLM_API_KEY")
     )
 
+    local_base_url = any(
+        host in base_url
+        for host in ("localhost", "127.0.0.1", "0.0.0.0", "::1")
+    )
+    if not api_key and not local_base_url:
+        raise RuntimeError(
+            "OLLAMA_API_KEY manquante. Ajoutez OLLAMA_API_KEY (ou LLM_API_KEY) dans backend/.env, "
+            "ou utilisez OLLAMA_BASE_URL local (http://localhost:11434)."
+        )
+
     # ChatOllama gère l'auth via client_kwargs headers ou via base_url avec userinfo
     client_kwargs: dict = {}
     if api_key:
@@ -85,7 +95,7 @@ def get_agent():
             ToolCallLimitMiddleware(thread_limit=12, run_limit=8, exit_behavior="continue"),
             CitationValidationMiddleware(),
         ],
-        name="folio-rag-agent",
+        name="just-rag-agent",
     )
     return _agent
 
